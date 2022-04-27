@@ -6,17 +6,17 @@ namespace Polindrom
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(CheckPolyndrom(Console.ReadLine()));
-
+            while (true)
+                Console.WriteLine(CheckPolyndrom(Console.ReadLine()));
         }
 
         static bool CheckPolyndrom(string text)
         {
             bool flag = true;
 
-            for (int i = 0; i < text.Length/2; i++)
+            for (int i = 0; i < text.Length / 2; i++)
             {
-                if (text[i]!=text[text.Length-1-i])
+                if (text[i] != text[text.Length - 1 - i])
                 {
                     flag = false;
                 }
